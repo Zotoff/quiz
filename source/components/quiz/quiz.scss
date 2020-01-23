@@ -1,0 +1,38 @@
+@import '../../styles/common.scss';
+
+.quiz {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz__wrapper {
+    width: 60%;
+    height: auto;
+    @include flex(center, center);
+}
+.quiz__item {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.quiz__arrows {
+    width: 100%;
+    @include flex(space-between, center);
+}
+.quiz__arrows_left,
+.quiz__arrows_right {
+    display: block;
+    width: 49%;
+    height: 50px;
+    @include flex(center, center);
+    background-color: #f8f8f8;
+    box-shadow: 1px 2px 15px grey;
+    transition: all .5s ease-in;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 2px 1px 15px grey;
+    }
+}

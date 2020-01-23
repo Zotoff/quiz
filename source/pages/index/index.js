@@ -1,9 +1,4 @@
-import createMenu from '../../components/menu/menu';
+import quiz from '../../components/quiz/quiz';
 import 'normalize.css';
+import '../../styles/common.scss';
 import './index.scss';
-let menu = createMenu(['Главная', 'Блог'], 'menu');
-document.body.appendChild(menu);
-
-$(document).ready(function() {
-  alert('check');
-});
