@@ -4,4 +4,6 @@ import './index.scss';
 let menu = createMenu(['Главная', 'Блог'], 'menu');
 document.body.appendChild(menu);
 
-console.log('Index.js');
+$(document).ready(function() {
+  alert('check');
+});
